@@ -1,0 +1,3 @@
+<import src="../../html-view/index.wxml" />
+
+<template is="html-view" data="{{data: html}}" />

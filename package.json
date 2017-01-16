@@ -1,0 +1,42 @@
+{
+  "name": "wx-mina-html-view",
+  "version": "0.1.0",
+  "description": "微信小程序渲染html",
+  "main": "index.js",
+  "scripts": {
+    "build-html-view-template": "node build/build-html-view-template.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenivana/wx-mina-html-view.git"
+  },
+  "author": "Jiang Fengming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fenivana/wx-mina-html-view/issues"
+  },
+  "homepage": "https://github.com/fenivana/wx-mina-html-view#readme",
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-enough": "^0.2.2"
+  },
+  "eslintConfig": {
+    "extends": "enough",
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "wx": false,
+      "App": false,
+      "Page": false,
+      "getApp": false
+    },
+    "rules": {
+      "new-cap": "off"
+    }
+  },
+  "dependencies": {
+    "himalaya": "^0.2.2",
+    "html-entities": "^1.2.0"
+  }
+}
