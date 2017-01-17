@@ -4,7 +4,7 @@
   "description": "微信小程序渲染html",
   "main": "index.js",
   "scripts": {
-    "build-html-view-template": "node build/build-html-view-template.js"
+    "build-template": "node build/build-template.js"
   },
   "repository": {
     "type": "git",

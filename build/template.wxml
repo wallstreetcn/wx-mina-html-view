@@ -10,6 +10,7 @@
         <template is="html-view-nodes" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>

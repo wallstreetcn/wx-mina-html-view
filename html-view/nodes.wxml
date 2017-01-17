@@ -10,6 +10,7 @@
         <template is="html-view-nodes-1" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -25,6 +26,7 @@
         <template is="html-view-nodes-2" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -40,6 +42,7 @@
         <template is="html-view-nodes-3" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -55,6 +58,7 @@
         <template is="html-view-nodes-4" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -70,6 +74,7 @@
         <template is="html-view-nodes-5" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -85,6 +90,7 @@
         <template is="html-view-nodes-6" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -100,6 +106,7 @@
         <template is="html-view-nodes-7" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -115,6 +122,7 @@
         <template is="html-view-nodes-8" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -130,6 +138,7 @@
         <template is="html-view-nodes-9" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>
@@ -145,6 +154,7 @@
         <template is="html-view-nodes-10" data="{{nodes: item.children}}" />
       </text>
       <video wx:elif="{{item.wxTag === 'video'}}" src="{{item.attributes.src}}" class="video"></video>
+      <audio wx:elif="{{item.wxTag === 'audio'}}" src="{{item.attributes.src}}" class="audio" controls></audio>
     </block>
   </block>
 </template>

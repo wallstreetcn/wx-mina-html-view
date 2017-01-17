@@ -36,16 +36,19 @@ Page({
       <h6>Heading level 6</h6>
 
       <img src="https://static.mengniang.org/common/7/7e/2-16031Q11945117.png">
-      <p>(from https://zh.moegirl.org/zh-hans/%E9%98%BF%E5%BA%93%E5%A8%85)</p>
+      <p>(https://zh.moegirl.org/zh-hans/%E9%98%BF%E5%BA%93%E5%A8%85)</p>
 
 
-      <video src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4"></video>
-      <p>(from https://www.html5rocks.com/en/tutorials/video/basics/)</p>
+      <video src="http://mvvideo11.meitudata.com/58401926e8aad3470.mp4"></video>
+      <p>(http://www.meipai.com/media/618289646)</p>
 
       <p>Use &lt;source&gt;</p>
       <video>
-       <source src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type="video/mp4">
+       <source src="http://mvvideo11.meitudata.com/58401926e8aad3470.mp4" type="video/mp4">
       </video>
+
+      <audio src="http://www.tingge123.com/mp3/2016-04-16/1460775737.mp3"></audio>
+      <p>(http://www.tingge123.com/qqmusic/d14370.html)</p>
 
       <table>
         <tr>

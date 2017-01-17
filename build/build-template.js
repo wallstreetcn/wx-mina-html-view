@@ -2,7 +2,7 @@ const depth = 10
 
 process.chdir(__dirname + '/..')
 const fs = require('fs')
-const template = fs.readFileSync('./html-view/template.wxml', 'utf8')
+const template = fs.readFileSync('./build/template.wxml', 'utf8')
 
 let output = ''
 

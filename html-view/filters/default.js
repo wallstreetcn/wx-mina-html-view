@@ -8,8 +8,8 @@ module.exports = function(item) {
     return true
   }
 
-  if (item.tagName === 'video') {
-    item.wxTag = 'video'
+  if (item.tagName === 'video' || item.tagName === 'audio') {
+    item.wxTag = item.tagName
 
     if (!item.attributes.src) {
       item.children.some(child => {
