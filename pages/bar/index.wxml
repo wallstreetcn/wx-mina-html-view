@@ -1,0 +1,2 @@
+<view>query:</view>
+<view class="pre">{{query}}</view>

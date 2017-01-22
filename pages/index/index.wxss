@@ -1,4 +1,9 @@
-/**index.wxss**/
+@import "../../html-view/index.wxss";
+
+navigator.a {
+  color: blue
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

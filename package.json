@@ -37,6 +37,8 @@
   },
   "dependencies": {
     "himalaya": "^0.2.2",
-    "html-entities": "^1.2.0"
+    "html-entities": "^1.2.0",
+    "url-router": "^2.1.0",
+    "x-url": "^0.1.0"
   }
 }

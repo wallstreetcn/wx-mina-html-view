@@ -1,4 +1,6 @@
-const parseHtml = require('../../html-view/index')
+const HtmlParser = require('../../html-view/index')
+const qiniuImg = require('../../html-view/each/qiniuImg')
+const resolveAnchor = require('../../html-view/each/resolveAnchor')
 
 Page({
   data: {
@@ -6,7 +8,7 @@ Page({
   },
 
   onLoad() {
-    const html = `
+    const htmlString = `
       <p>
         This is the first paragraph of text.<br>
         This is the first paragraph of text😂.
@@ -14,6 +16,11 @@ Page({
         This is the first paragraph of text.
       </p>
 
+      <p>
+        <a href="/foo?a=123">/foo?a=1</a><br><br>
+        <a href="/bar/456?token=abc">/bar/456?token=abc</a><br><br>
+        <a href="https://www.google.com">https://www.google.com</a>
+      </p>
 
       <blockquote>
         This is the second paragraph.
@@ -35,20 +42,34 @@ Page({
       <h5>Heading level 5</h5>
       <h6>Heading level 6</h6>
 
-      <img src="https://static.mengniang.org/common/7/7e/2-16031Q11945117.png">
-      <p>(https://zh.moegirl.org/zh-hans/%E9%98%BF%E5%BA%93%E5%A8%85)</p>
+      <p>
+        <img src="https://static.mengniang.org/common/7/7e/2-16031Q11945117.png"><br>
+        (https://zh.moegirl.org/zh-hans/%E9%98%BF%E5%BA%93%E5%A8%85)
+      </p>
+
+      <p>
+        七牛imageView2:<br>
+        <img src="https://ocpk3ohd2.qnssl.com/uploads/image/file/12/71/1271db28b9dc056ce53d7889b5f8097d.jpg"><br>
+        (http://dn-geekpark-new.qbox.me/topics/215301)
+      </p>
 
 
-      <video src="http://mvvideo11.meitudata.com/58401926e8aad3470.mp4"></video>
-      <p>(http://www.meipai.com/media/618289646)</p>
+      <p>
+        <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video><br>
+        (http://camendesign.com/code/video_for_everybody/test.html)
+      </p>
 
-      <p>Use &lt;source&gt;</p>
-      <video>
-       <source src="http://mvvideo11.meitudata.com/58401926e8aad3470.mp4" type="video/mp4">
-      </video>
+      <p>
+        Use &lt;source&gt;<br>
+        <video>
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+        </video>
+      </p>
 
-      <audio src="http://www.tingge123.com/mp3/2016-04-16/1460775737.mp3"></audio>
-      <p>(http://www.tingge123.com/qqmusic/d14370.html)</p>
+      <p>
+        <audio src="http://www.tingge123.com/mp3/2016-04-16/1460775737.mp3"></audio><br>
+        (http://www.tingge123.com/qqmusic/d14370.html)
+      </p>
 
       <table>
         <tr>
@@ -108,7 +129,13 @@ Page({
       </table>
     `
 
-    this.setData({ html: parseHtml(html) })
+    const html = new HtmlParser(htmlString, { baseUrl: 'https://www.example.com' })
+      .each(qiniuImg('qnssl.com'))
+      .each(resolveAnchor('www.example.com', [
+        ['/foo', '/pages/foo/index'],
+        ['/bar/:id', '/pages/bar/index']
+      ])).nodes
+    this.setData({ html })
 
     console.log(this.data.html) // eslint-disable-line
   }
