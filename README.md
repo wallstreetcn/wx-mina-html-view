@@ -1,12 +1,16 @@
 # wx-mina-html-view
 微信小程序渲染html
 
+<img src="demo.png" width="320">
+
 ## 支持的特性:
 * 大部分的普通HTML标签(未全部测试)
 * `<img>`, `<video>`, `<audio>`
 * `<table>`, `<tr>`, `<th>`, `<td>`等表格标签
 * `<a>`标签转`<navigator>`
 * HTML entities
+* 七牛图片裁剪
+* 自定义插件
 
 不支持`<form>`, `<input>`, `<select>`等表单元素.
 
