@@ -8,6 +8,8 @@
 * `<a>`标签转`<navigator>`
 * HTML entities
 
+不支持`<form>`, `<input>`, `<select>`等表单元素.
+
 ## 使用方法
 请参考`pages/index`目录里的文件.
 
