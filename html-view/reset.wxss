@@ -304,3 +304,7 @@ based on https://chromium.googlesource.com/chromium/blink/+/master/Source/core/c
 .nobr {
   white-space: nowrap;
 }
+
+.span {
+  display: inline
+}
