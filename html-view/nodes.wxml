@@ -6,9 +6,9 @@
         <template is="html-view-nodes-1" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-1" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-1" data="{{nodes: item.children}}" />
@@ -30,9 +30,9 @@
         <template is="html-view-nodes-2" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-2" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-2" data="{{nodes: item.children}}" />
@@ -54,9 +54,9 @@
         <template is="html-view-nodes-3" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-3" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-3" data="{{nodes: item.children}}" />
@@ -78,9 +78,9 @@
         <template is="html-view-nodes-4" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-4" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-4" data="{{nodes: item.children}}" />
@@ -102,9 +102,9 @@
         <template is="html-view-nodes-5" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-5" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-5" data="{{nodes: item.children}}" />
@@ -126,9 +126,9 @@
         <template is="html-view-nodes-6" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-6" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-6" data="{{nodes: item.children}}" />
@@ -150,9 +150,9 @@
         <template is="html-view-nodes-7" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-7" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-7" data="{{nodes: item.children}}" />
@@ -174,9 +174,9 @@
         <template is="html-view-nodes-8" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-8" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-8" data="{{nodes: item.children}}" />
@@ -198,9 +198,9 @@
         <template is="html-view-nodes-9" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-9" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-9" data="{{nodes: item.children}}" />
@@ -222,9 +222,9 @@
         <template is="html-view-nodes-10" data="{{nodes: item.children}}" />
       </view>
 
-      <text wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
+      <view wx:elif="{{item.wxTag === 'text'}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-10" data="{{nodes: item.children}}" />
-      </text>
+      </view>
 
       <navigator wx:elif="{{item.wxTag === 'navigator'}}" url="{{item.url}}" class="{{item.tagName}} {{item.attributes.className}}" style="{{item.attributes.styleString}}">
         <template is="html-view-nodes-10" data="{{nodes: item.children}}" />
